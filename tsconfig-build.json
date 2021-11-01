@@ -3,11 +3,11 @@
     "target": "es6",
     "module": "commonjs",
     "strict": true,
-    "outDir": "build",
+    "outDir": "dist",
     "removeComments": true,
     "resolveJsonModule": true,
     "declaration": true
   },
   "include": ["src/*"],
-  "exclude": ["node_modules", "build", "lib"]
+  "exclude": ["node_modules", "dist", "lib"]
 }

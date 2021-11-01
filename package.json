@@ -1,9 +1,9 @@
 {
   "name": "logger-ts-4",
-  "version": "1.0.2",
-  "description": "Write logs into a file.",
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
+  "version": "1.0.4",
+  "description": "Write logs into a file",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "keyword": [
     "logger",
     "log",
