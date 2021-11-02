@@ -44,4 +44,13 @@ export class Logger {
   public fatal(message: string): void {
     this.write({ message, type: "Fatal  " });
   }
+
+  // append custom message to the log file
+  public append(message: string): void {
+    fs.appendFile(this.file, message, (err) => {
+      if (err) {
+        console.log(err);
+      }
+    });
+  }
 }
