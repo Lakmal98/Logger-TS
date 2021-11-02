@@ -4,10 +4,7 @@ export class Logger {
   private file: string;
   private name: string;
 
-  constructor({
-    name = "log",
-    file = "logs.log",
-  }: { name?: string; file?: string } = {}) {
+  constructor(name: string = "log", file: string = "logs.log") {
     this.file = file;
     this.name = name;
   }
