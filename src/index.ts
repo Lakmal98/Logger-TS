@@ -1,3 +1,4 @@
+// @ts-ignore
 import * as fs from 'fs'
 
 export class Logger {
@@ -13,7 +14,7 @@ export class Logger {
     fs.appendFile(
       this.file,
       `${this.getTimeStamp()} [${type}] [${this.name}] >> ${message}\n`,
-      (err) => {
+      (err:any) => {
         if (err != null) {
           console.log(err)
         }
@@ -47,7 +48,7 @@ export class Logger {
 
   // append custom message to the log file
   public append (message: string): void {
-    fs.appendFile(this.file, message, (err) => {
+    fs.appendFile(this.file, message, (err:any) => {
       if (err != null) {
         console.log(err)
       }
